@@ -12,7 +12,7 @@ public class App {
         Random rnd = new Random();
 
         Properties props = new Properties();
-        props.put("metadata.broker.list", "kafka-1:9092,kafka-2:9092,kafka-3 ");
+        props.put("metadata.broker.list", "kafka-1.us-east-1.infrastructure.inintca.com:9092,kafka-2.us-east-1.infrastructure.inintca.com:9092,kafka-3.us-east-1.infrastructure.inintca.com:9092");
         props.put("serializer.class", "kafka.serializer.StringEncoder");
         props.put("partitioner.class", "com.inin.purecloud.devops.SimplePartitioner");
         props.put("request.required.acks", "1");
